@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="error.css">
+    <title>Test Beta</title>
+</head>
+
+<body class="pe-0">
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="/pages/inventory-management-blog.png" alt="pic" class="img-fluid mx-3" style="height: 60px;">
+            <h4 class="title text-white">INVENTORY SYSTEM</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav flex-column flex-lg-row align-items-start text-white ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link"><i class="fa-solid fa-house me-2"></i>HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#inventory" class="nav-link"><i class="fa-solid fa-box me-2"></i>INVENTORY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#history" class="nav-link"><i class="fa-regular fa-file me-2"></i>HISTORY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#archive" class="nav-link"><i class="fa-solid fa-box-archive me-2"></i>ARCHIVE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 ms-3 me-3" style="margin-top: 150px; margin-bottom: 50px">
+                    <h1 class="head" style="margin-bottom: 20px" id="home">Welcome to Inventory
+                        System</h1>
+                    <p class="descrip text-white mb-4 ms-3 me-3"> Start Managing your <span class="SmDescrip">Best
+                            Items</span>
+                    </p>
+
+                </div>
+
+                <div class="col-md-5 d-flex justify-content-center align-items-center mt-5">
+                    <div class="cube-container">
+                        <div class="cube">
+                            <div class="face front"><span>SYSTEM</span></div>
+                            <div class="face back">INVENTORY</div>
+                            <div class="face right">ARCHIVE ITEM</div>
+                            <div class="face left">DELETE ITEM</div>
+                            <div class="face top">ADD ITEM</div>
+                            <div class="face bottom">TRACK HISTORY</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" style="margin-top: 100px">
+                <div class="col-md-auto d-flex justify-content-center align-items-center">
+                    <img src="/pages/Homeven1.png" alt="pic" class="imgh img-fluid d-flex justify-content-center">
+                </div>
+                <div class="col-md-5 mb-4 d-flex align-items-center">
+                    <p class="descrip2 text-white d-flex justify-content-center mb-4">In this inventory system, key
+                        operations include adding,
+                        updating,
+                        deleting, and archiving items. Adding involves inputting details and saving them. Updating
+                        modifies existing item information. Deleting removes items from the database, while archiving
+                        moves obsolete items to a separate section for future reference.</p>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center" style="margin-top: 100px">
+                <div class="col-md-5 d-flex justify-content-center">
+                    <p class="descrip2 text-white mb-4 d-flex align-items-center">This inventory system tracks real-time
+                        product history and
+                        updates total products, total price, and total quantity. It provides accurate records for
+                        efficient inventory management and decision-making.</p>
+                </div>
+                <div class="col-md-auto mb-4 d-flex justify-content-center align-items-center">
+                    <img src="/pages/Homeven2.png" alt="pic" class="imgh2 img-fluid d-flex justify-content-center">
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center w-100 gap-4">
+            <div class="col-md-2 d-flex justify-content-center">
+                <div class="dev1">
+                    <div class="card-front">
+                        <p class="title">Yuan Axl</p>
+                        <p class="subtitle">Full Stack</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-center">
+                <div class="dev2">
+                    <div class="card-front">
+                        <p class="title">Jurwin</p>
+                        <p class="subtitle">Full Stack Asst.</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-center">
+                <div class="dev3">
+                    <div class="card-front">
+                        <p class="title">Arman</p>
+                        <p class="subtitle">Front-End</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-center">
+                <div class="dev4">
+                    <div class="card-front">
+                        <p class="title">Job</p>
+                        <p class="subtitle">Tester</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-center mb-4">
+                <div class="dev4">
+                    <div class="card-front">
+                        <p class="title">Lovely</p>
+                        <p class="subtitle">Tester</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 bg-light p-4 rounded vh-150" style="margin-bottom: 50px">
+        <h1 class="titleINV text-center my-4" id="inventory">INVENTORY</h1>
+        <div class="row mb-3 d-flex justify-content-center">
+            <div class="col-md-5 d-flex gap-3 mt-3 justify-content-center" style="height: 40px">
+                <input type="text" autocomplete="off" name="text" class="input1" placeholder="Search Item or ID"
+                    id="search">
+                <button class="btn btn-outline-warning w-25 d-none" id="editQuantityPrice">
+                    <i class="fa-solid fa-edit me-2"></i>
+                </button>
+                <button class="btn btn-outline-danger w-25 d-none" id="deleteSelected">
+                    <i class="fa-solid fa-trash me-2"></i>
+                </button>
+                <button class="btn additemsbut btn-outline-success w-50" id="add">
+                    <i class="fa-solid fa-plus me-2"></i>Add
+                </button>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-2 d-flex flex-column align-items-center">
+                <div class="row w-100">
+                    <div class="col mb-3">
+                        <div class="box1 text-center bg-primary">
+                            <p class="delivery">
+                                <img src="delivery-box.png" style="height: 30px; width: 30px">
+                                <span class="small-text">Total Products</span>
+                            </p>
+                            <p class="Total" id="totalProduct" style="font-size: 1.5rem;">2.00</p>
+                        </div>
+                    </div>
+
+                    <div class="col mb-3">
+                        <div class="box3 text-center bg-warning">
+                            <p class="totProduce">
+                                <img src="product.png" style="height: 30px; width: 30px">
+                                <span class="small-text">Total Quantity</span>
+                            </p>
+                            <p class="produce" id="totalQuantity" style="font-size: 1.5rem;">7.00</p>
+                        </div>
+                    </div>
+
+                    <div class="col mb-4">
+                        <div class="box2 text-center bg-success">
+                            <p class="price">
+                                <img src="peso.png" style="height: 30px; width: 30px">
+                                <span class="small-text">Total Price</span>
+                            </p>
+                            <p class="peso" id="totalPrice" style="font-size: 1.5rem;">7.24</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="invent col-md p-4 rounded" style="overflow-y: auto; max-height: 550px;">
+                <div class="row w-100" id="productCards">
+                    <div class="col-md-auto mb-4" id="product1">
+                        <div class="card p-2 h-100" style="width: 12rem;">
+                            <input class="form-check-input inspu my-2" type="checkbox" value="" id="rBut">
+                            <img src="lambo.jpg" class="card-img-top" style="height: 130px; width: 174px"
+                                alt="Card image">
+                            <div class="card-body">
+                                <h5 class="product-name">LAMBO BABY</h5>
+                                <p class="product-description d-flex justify-content-center">Description: Very Fast
+                                    Daddy</p>
+                                <p class="product-id">ID: 231</p>
+                                <p class="date-created">12/12/1910</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="product-quantity">Quantity: 2</p>
+                                    <p class="product-price">Price: <span class="prices"> $2.12</span></p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary editBtn"><i
+                                            class="fa-solid fa-pen-nib fa-sm"></i></button>
+                                    <button class="btn btn-outline-danger deleteBtn"><i
+                                            class="fa-solid fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto mb-4" id="product2">
+                        <div class="card p-2" style="width: 12rem;">
+                            <input class="form-check-input inspu my-2" type="checkbox" value="" id="rBut">
+                            <img src="Bugatti.jpg" class="card-img-top" style="height: 130px; width: 174px"
+                                alt="Card image">
+                            <div class="card-body">
+                                <h5 class="product-name">BUGATTI BABY</h5>
+                                <p class="product-description d-flex justify-content-center">Description: Very Fast
+                                    Daddy</p>
+                                <p class="product-id">ID: 441</p>
+                                <p class="date-created">12/12/1910</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="product-quantity">Quantity: 5</p>
+                                    <p class="product-price">Price: <span class="prices"> $5.12</span></p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary editBtn"><i
+                                            class="fa-solid fa-pen-nib fa-sm"></i></button>
+                                    <button class="btn btn-outline-danger deleteBtn"><i
+                                            class="fa-solid fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Add New Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="productForm">
+                        <div class="mb-3">
+                            <label for="productImage" class="form-label">Product Image</label>
+                            <input type="file" class="form-control" id="productImage" accept="image/*">
+                            <img id="imagePreview" src="#" alt="Image Preview" class="mt-3 rounded"
+                                style="width: 100%; display: none;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="productName" class="form-label">Product Name</label>
+                            <input type="text" class="form-control" id="productName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="productDescription" class="form-label">Product Description</label>
+                            <textarea class="form-control" id="productDescription" rows="3"
+                                placeholder="Optional.."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity">
+                        </div>
+                        <div class="mb-3">
+                            <label for="productPrice" class="form-label">Product Price</label>
+                            <input type="number" class="form-control" id="productPrice" step="0.01">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="saveProductBtn">Save Product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirmationModal" class="modal fade" tabindex="-1" aria-labelledby="confirmationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header flex-column">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE5CD;</i>
+                    </div>
+                    <h4 class="modal-title w-100" id="confirmationModalLabel">Are you sure?</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Do you really want to delete these Items? This Item be archived instead of permanently deleted
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="permanentDeleteModal" class="modal fade" tabindex="-1" aria-labelledby="permanentDeleteModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header flex-column">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE5CD;</i>
+                    </div>
+                    <h4 class="modal-title w-100" id="permanentDeleteModalLabel">Are you sure?</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to permanently delete this archived product?</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" id="confirmPermanentDeleteBtn">
+                        Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editQuantityPriceModal" tabindex="-1" aria-labelledby="editQuantityPriceModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editQuantityPriceModalLabel">Edit Quantity & Price</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="productEditList"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="saveEditBtn">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <div class="upground p-4">
+            <div class="col-md-11 bg-light p-4 rounded vh-100 overflow-auto"
+                style="margin-bottom: 100px; margin-top: 100px">
+                <h1 class="Title3 text-center my-4" id="history">ITEM HISTORY</h1>
+                <div class="row d-flex justify-content-center mb-4">
+                    <div class="col-md-5 d-flex gap-3 mt-3" style="height: 40px;">
+                        <input placeholder="search here...." class="input2" name="text" type="text" id="search-history">
+                        <button class="btn btn-outline-primary w-25" id="search-btn-history"><i
+                                class="fa-solid fa-magnifying-glass me-2"></i></button>
+                    </div>
+                </div>
+                <hr>
+
+
+                <div class="overflow-auto">
+                    <table class="table" style="vertical-align: middle;">
+                        <thead class="bg-secondary text-white">
+                            <tr class="text-center">
+                                <th scope="col">#</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Product Description</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTableBody">
+                            <tr class="text-center">
+                                <th scope="row">1</th>
+                                <td>LAMBO BABY</td>
+                                <td>Very Fast Daddy</td>
+                                <td>231</td>
+                                <td>12/12/1910</td>
+                                <td>2</td>
+                                <td><img src="lambo.jpg" alt="product image" style="height: 40px; width: 50px"></td>
+                                <td>$2.12</td>
+                                <td>Has Been Added</td>
+                                <td>
+                                    <button class="btn btn-outline-danger deleteHistoryBtn"><i
+                                            class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">2</th>
+                                <td>BUGATTI BABY</td>
+                                <td>Very Fast Daddy</td>
+                                <td>441</td>
+                                <td>12/12/1910</td>
+                                <td>5</td>
+                                <td><img src="Bugatti.jpg" alt="product image" style="height: 40px; width: 50px"></td>
+                                <td>$5.12</td>
+                                <td>Has Been Added</td>
+                                <td>
+                                    <button class="btn btn-outline-danger deleteHistoryBtn"><i
+                                            class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+    <center>
+        <div class="col-md-11 bg-light p-4 rounded vh-100" style="margin-bottom: 50px">
+            <h1 class="Title4 text-center my-4" id="Archive">ARCHIVE</h1>
+            <label class="wrapper my-4" for="Sarchive">
+                <input type="text" placeholder="Search Deleted Items" name="text" class="input" id="Sarchive">
+                <span class="placeholder">Search</span>
+            </label>
+            <hr>
+            <div id="archive">
+                <div class="row">
+
+                </div>
+            </div>
+
+        </div>
+    </center>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="error.js"></script>
+</body>
+
+</html>
