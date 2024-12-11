@@ -307,6 +307,12 @@
     background: #ee3535;
 }
 
+@media (max-width: 375px) {
+    .modal-confirm {
+        width: 300px; 
+    }
+}
+
 .trigger-btn {
     display: inline-block;
     margin: 100px auto;
