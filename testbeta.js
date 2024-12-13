@@ -162,7 +162,7 @@ function createProductCard(productId, productName, productDescription, quantity,
     attachEditButtonListener(productCard);
 }
 
-let selectedProductCard = null; // Variable to store the selected product card for editing
+let selectedProductCard = null;
 
 document.getElementById('editQuantityPrice').addEventListener('click', function () {
     const selectedCards = document.querySelectorAll('#productCards .form-check-input:checked');
@@ -171,15 +171,12 @@ document.getElementById('editQuantityPrice').addEventListener('click', function 
     const quantityText = selectedProductCard.querySelector('.product-quantity').textContent;
     const priceText = selectedProductCard.querySelector('.product-price').textContent;
 
-    // Extract quantity and price
     const currentQuantity = parseInt(quantityText.split(": ")[1].trim());
     const currentPrice = parseFloat(priceText.split(": ")[1].trim().substring(1));
 
-    // Set the current values in the modal
     document.getElementById('editQuantity').value = currentQuantity;
     document.getElementById('editPrice').value = currentPrice.toFixed(2);
 
-    // Show the modal
     const modal = new bootstrap.Modal(document.getElementById('editQuantityPriceModal'));
     modal.show();
 });
@@ -389,6 +386,21 @@ checkboxes.forEach(checkbox => {
 // Add event listener to the "Edit Quantity & Price" button
 document.getElementById('editQuantityPrice').addEventListener('click', function () {
     // Your existing code for handling the "Edit Quantity & Price" button click event
+});
+
+// Add this code to hide the edit and delete buttons when the edit modal is closed
+const editQuantityPriceModal = document.getElementById('editQuantityPriceModal');
+editQuantityPriceModal.addEventListener('hidden.bs.modal', function () {
+    // Hide the edit and delete buttons
+    document.getElementById('editQuantityPrice').classList.add('d-none');
+    document.getElementById('deleteSelected').classList.add('d-none');
+});
+
+// Add this code to hide the edit and delete buttons when the product modal is closed
+productModal.addEventListener('hidden.bs.modal', function () {
+    // Hide the edit and delete buttons
+    document.getElementById('editQuantityPrice').classList.add('d-none');
+    document.getElementById('deleteSelected').classList.add('d-none');
 });
 
 function attachEditButtonListener(productElement) {
