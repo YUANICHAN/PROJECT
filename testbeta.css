@@ -37,7 +37,7 @@
 }
 
 .head {
-    font-size: 60px;
+    font-size: 4.2rem;
     font-family: Tahoma;
     background: #CFE7FA;
     background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
@@ -68,7 +68,9 @@
 }
 
 .content {
-    background-color: #001f43;
+    background-image: url('/lami.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cube-container {
@@ -142,6 +144,12 @@
     100% {
         transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
     }
+}
+
+.rowawers {
+    position: absolute;
+    transform: translateX(30%);
+    left: 30%;
 }
 
 .dev1,
@@ -309,7 +317,7 @@
 
 @media (max-width: 375px) {
     .modal-confirm {
-        width: 300px; 
+        width: 300px;
     }
 }
 
@@ -333,8 +341,12 @@
 
 .descrip2 {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-style: serif;
+    background: #CFE7FA;
+    background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .SmDescrip {
@@ -570,14 +582,22 @@
 }
 
 .inspu {
-    appearance: none; /* Remove default styling */
-    width: 20px; /* Set width */
-    height: 20px; /* Set height */
-    border: 2px solid #000; /* Add border */
-    border-radius: 3px; /* Optional: rounded corners */
-    outline: none; /* Remove outline */
-    cursor: pointer; /* Change cursor on hover */
-    position: relative; /* Positioning for the checkmark */
+    appearance: none;
+    /* Remove default styling */
+    width: 20px;
+    /* Set width */
+    height: 20px;
+    /* Set height */
+    border: 2px solid #000;
+    /* Add border */
+    border-radius: 3px;
+    /* Optional: rounded corners */
+    outline: none;
+    /* Remove outline */
+    cursor: pointer;
+    /* Change cursor on hover */
+    position: relative;
+    /* Positioning for the checkmark */
 }
 
 .card {
@@ -720,9 +740,9 @@
 
 .wrapper {
     position: relative;
-  }
-  
-  .input {
+}
+
+.input {
     width: 190px;
     height: 35px;
     border-radius: 5px;
@@ -731,9 +751,9 @@
     background-color: #ffffff;
     font-size: 15;
     font-weight: 500;
-  }
-  
-  .placeholder {
+}
+
+.placeholder {
     width: 65%;
     position: absolute;
     top: -18px;
@@ -748,25 +768,25 @@
     letter-spacing: 1.5px;
     transition: all 0.3s;
     opacity: 0;
-  }
-  
-  .input::placeholder {
+}
+
+.input::placeholder {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 1px;
-  }
-  
-  .input:focus + .placeholder {
+}
+
+.input:focus+.placeholder {
     opacity: 1;
-  }
-  
-  .input:focus {
+}
+
+.input:focus {
     outline: 2px solid blueviolet;
     border: none;
     color: blueviolet;
-  }
-  
-  .input:focus::placeholder {
+}
+
+.input:focus::placeholder {
     opacity: 0;
-  }
-  
+}
+
